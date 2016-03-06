@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>问题详情页面</title>
 	<link rel="stylesheet" type="text/css" href="style/a.css">
+	<script type="text/javascript" src="javascript/gotop.js"></script>
 	<script type="text/javascript" src="javascript/app.js"></script>
 </head>
 <body>
@@ -85,7 +86,38 @@
 					<a href="#" class="report blue-underline-two"><i></i>举报</a>
 				</div>
 			</div>
+			<!-- <div id="hiddenreport">
+				<div class="report">
+					<div class="reportbox1">
+								<div class="report-left1"><img src=""></div>
+								<div class="report-right1">
+									<a href="##"></a>
+									<p>原先“与已有答案重复”这一条，现在不鼓励点击没有帮助了吗？</p>
+									<p>2年前</p>
+								</div>
+					</div>
 
+					<div>
+								<div><img src=""></div>
+								<div>
+									<a href=""></a>
+									<p>原先“与已有答案重复”这一条，现在不鼓励点击没有帮助了吗？</p>
+									<p>2年前</p>
+								</div>
+					</div>
+
+					<div>
+								<div><img src=""></div>
+								<div>
+									<a href=""></a>
+									<p>原先“与已有答案重复”这一条，现在不鼓励点击没有帮助了吗？</p>
+									<p>2年前</p>
+								</div>
+					</div>
+				</div>
+				<div class="pull-issue"></div>
+				<div class="pull"></div>
+			</div> -->
 			<!-- 问题的回答 -->
 			<div class="answer">
 				<div class="answer-header">
@@ -169,7 +201,7 @@
 								<div id="btn6"><i></i></div>
 								
 						</div>
-						<textarea cols="82" rows="6">
+						<textarea cols="82" rows="6" id="textdec">
 							
 						</textarea>
 					</div>
@@ -187,7 +219,9 @@
 		
 		</div>
 
-
+		<div id="backtop">
+			<a href="#" onclick="gotoTop();return false;" class="totop"></a>
+		</div>
 
 
 		<div class="right">

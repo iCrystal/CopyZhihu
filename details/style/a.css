@@ -251,6 +251,21 @@ body{
     height: 10px;
     background-position: -28px -22px;
 }
+#hiddenreport{
+	/*display: none;*/
+	width: 540px;
+	border-radius: 4px;
+	border:1px solid #ddd;
+	
+}
+.report-left{
+	float: left;
+}
+.report-right{
+	float: right;
+}
+
+
 .edit-share i{
 	display: inline-block;
     line-height: 10px;
@@ -373,13 +388,18 @@ body{
 	height: 16px;
 	display: block;
 }
-.answerbox textarea{
+.answerbox #textdec{
+	font-family: Microsoft Yahei;
 	border-top: none;
+	padding-left: 2px;
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding-top: 10px;
-	padding-left: 2px;
+	
 	color: black;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+	text-indent: 4em;
 	font-size: 14px;
 }
 .option-information button{
@@ -564,4 +584,14 @@ body{
 .blue-underline-two:hover{
 	text-decoration: underline;
 	color: #259;
+}
+.totop{
+	position:fixed;
+	right:125px;
+	bottom:100px;
+	display:block;
+	width:52px;
+	height:62px;
+	background:url(../images/backtop.png) no-repeat 0 0;
+	transition: all 0.2s ease-in-out;
 }
