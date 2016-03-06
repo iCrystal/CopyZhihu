@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>问题详情页面</title>
+	<link rel="stylesheet" type="text/css" href="style/a.css">
+	<script type="text/javascript" src="javascript/app.js"></script>
+</head>
+<body>
+	<div class="navigation header">
+		<div class="navigation-content clearfix">
+			<!-- 知乎logo -->
+			<a href="#" class="zhihu-logo"><img src="images/new_logo.png">知乎</a>
+			<!-- 知乎搜索框 -->
+			<div class="search">
+				<form method="GET" action="/search" class="search-form">
+					<input type="text" placeholder="搜索问题、话题或人" class="search-form-input">
+					<button type="submit" class="search-button">
+						<span class="hide-text">搜索</span>
+						<span class="search-logo"></span>
+					</button>
+				</form>
+			</div>
+			<!-- tab标签 -->
+			<div class="tabs">
+				<ul class="tabs-ul" >
+					<li class="firstpage"><a href="#" class="highlight">首页</a></li>
+					<li class="topic"><a href="#" class="highlight">话题</a></li>
+					<li class="find"><a href="#" class="highlight">发现</a></li>
+					<li class="message"><a href="#" class="highlight">消息</a></li>
+				</ul>
+			</div>
+			<!-- 提问 -->
+			<button class="ask-question">提问</button>
+			<!-- 个人选项 -->
+			<div class="nav-profile">
+				<a href="#" class="message">
+					<img src="https://pic3.zhimg.com/72161b856e4d789a01c22f5b36e52c7a_s.jpg" class="photos">
+					<span class="name">於光晶</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 页面内容 -->
+	<div id="content" class="clearfixs">
+		<div class="left">
+			<div class="header">
+				<div class="header-tabs">
+					<a href="#" class="header-tabs-span">知乎指南</a>
+					<a href="#" class="header-tabs-span">知乎使用</a>
+					<a href="#" class="header-tabs-span">知乎回答</a>
+					<a href="#" class="header-tabs-span">回答折叠(知乎功能)</a>
+					<div>
+						<i></i>
+						<a href="#">修改</a>
+					</div>
+				</div>
+
+				<div class="question-tags">
+					<h2>为什么知乎的部分回答会被折叠？ 折叠和「没有帮助」有什么关系？</h2>
+				</div>
+
+				<div class="edit-button">
+					<i></i>
+					<a href="#">修改</a>
+				</div>
+				<div>
+					<p>即：知乎鼓励用户在哪些情况下使用「没有帮助」？</p>
+					<p>本问题隶属于「知乎官方指南」：
+					<a href="#" class="blue-underline">属于「知乎官方指南」的问答有哪些？</a>
+					</p>
+					<p class="son-question">子问题：<a href="#" class="blue-underline">回答被折叠后能不能申诉？</a></p>
+					<div class="edit-button-two">
+						<i></i>
+						<a href="#">修改</a>
+					</div>
+				</div>
+
+				<div class="edit-content">	
+					<a href="#" class="edit-report blue-underline-two"><i></i>54条评论</a>
+					<a href="#" class="edit-share blue-underline-two"><i></i>分享</a>
+					<a href="#" class="blue-underline-two"><i>•</i>邀请回答</a>
+					<a href="#" class="report blue-underline-two"><i></i>举报</a>
+				</div>
+			</div>
+
+			<!-- 问题的回答 -->
+			<div class="answer">
+				<div class="answer-header">
+					<!-- 投票部分 -->
+					<!-- <div class="vote-siderbar">
+						<button class="up">
+							<i class="up-vote-arrow"></i>
+							<span>794</span>
+							<i></i>
+						</button>
+						<button class="down">
+							<i></i>
+						</button>
+					</div> -->
+					<div class="author">
+						<a href="#" class="zu-author">知乎小管家</a>
+						<span>，欢迎反馈问题和建议！</span>
+						<img src="https://pic3.zhimg.com/34bf96bf5584ac4b5264bd7ed4fdbc5a_s.jpg">
+					</div>
+					<div class="voter">
+						<a href="#" class="blue-underline-two">秦盟要</a>
+						<span>、</span>
+						<a href="#" class="blue-underline-two">咨嗟</a>
+						<span>、</span>
+						<a href="#" class="blue-underline-two">伤心的星星</a> 
+						<a href="#" class="blue-underline-two">等人赞同</a>
+					</div>
+				</div>
+				<div>
+					<p>折叠是知乎对不认真和严重错误的回答的一种处理方式。</p>
+					<br/><br/>
+					<p>具体指下列两种回答：</p>
+					<p>1.与问题无关的回答，包括：</p>
+					<br/>
+					<p>应作为问题或其他回答的评论或补充，如「好顶赞」。</p>
+					<p>全文为与问题无关的调侃、玩笑，如在提问「画师真的很好当吗？」下回答「看脸」。</p>
+					<p>未正面回答问题，如在提问「如何锻炼出腹肌？」下回答「腹肌不重要，我教你提升心肺功能」。</p>
+					<p>2.事实性错误或过于偏激的主观判断</p>
+					<br>
+					<p>目前，判断回答是否需要折叠的主体是知乎用户，用户可以通过点击「没有帮助」来参与维护一个更高质量、更有价值的问答氛围。当一个回答被多次点击「没有帮助」，并满足一定条件后该回答就会被折叠。</p>
+					<p>同时，知乎管理员也会参与其中，对部分回答进行折叠。</p><br/>
+					<p>如果您认为某个回答与上述几点无关，但仍被折叠了，可以发送邮件至 i@zhihu.com 提起申诉。另：如果您对知乎折叠功能有更好的想法或者意见，可以使用右下角「建议反馈」提出建议，我们会整理并反馈您的建议。</p>
+				</div>
+				<div class="footer-edit">
+					<a href="#" class="blue-underline-two">编辑于2015-11-20</a>
+					<a href="#" class="commit blue-underline-two"><i class="icon-commit-one"></i>83 条评论</a>
+					<a href="#" class="thanks blue-underline-two"><i class="icon-commit-two"></i>感谢</a>
+					<a href="#" class="share blue-underline-two"><i class="icon-commit-three"></i>分享</a> 
+					<a href="#" class="collect blue-underline-two"><i class="icon-commit-four"></i>收藏</a>
+					<span>•</span>
+					<a href="#" class="blue-underline-two">没有帮助</a> 
+					<span>•</span> 
+					<a href="#" class="blue-underline-two">举报</a>
+					<span>•</span> 
+					<a href="#" class="blue-underline-two">作者保留权利</a>
+				</div>
+			</div>
+
+
+			<!-- 回答问题部分 -->
+			<form class="huida">
+				<div class="answer-question">
+					<div class="person-information">
+						<span>
+							<a href="#">魏天嘉</a>
+							<strong>，快递小哥</strong>
+						</span>
+						<span>
+							<i></i>
+							<a href="#">添加话题经验，提升回答可信度</a>
+						</span>
+					</div>
+					<div class="answerbox">
+						<div class="operation">
+							
+								<div id="btn1"><i></i></div>
+								<div id="btn2"><i></i></div>
+								<div id="btn3"><i></i></div>
+								<div id="btn4"><i></i></div>
+								<div id="btn5"><i></i></div>
+								<div id="btn6"><i></i></div>
+								
+						</div>
+						<textarea cols="82" rows="6">
+							
+						</textarea>
+					</div>
+					<div class="option-information">
+						<label>
+							<input type="checkbox">匿名
+						</label>
+						<lable>
+							<input type="checkbox">未经许可，不得转载
+						</lable>
+						<button type="submit">发布回答</button>
+					</div>
+				</div>
+			</form>	
+		
+		</div>
+
+
+
+
+		<div class="right">
+			<div class="first-section">
+				<div class="clearfixs">
+					<div class="attention">
+						关注问题
+					</div>
+					<div class="site">
+						<i class="set-up"></i>
+					</div>
+				</div>
+				<div class="people"><a href="#">1065</a> 人关注该问题</div>
+				<div>
+					<div>
+						<img src="https://pic4.zhimg.com/ca95f057c266d37c290ce25fc935e13b_s.jpg">
+						<img src="https://pic1.zhimg.com/da8e974dc_s.jpg">
+						<img src="https://pic4.zhimg.com/6661ae1a95fbf257a540aeaa804133b3_s.jpg">
+						<img src="https://pic1.zhimg.com/da8e974dc_s.jpg">
+						<img src="https://pic1.zhimg.com/da8e974dc_s.jpg">
+						<img src="https://pic1.zhimg.com/af38f01d4_s.jpg">
+						<img src="https://pic1.zhimg.com/da8e974dc_s.jpg">
+						<img src="https://pic3.zhimg.com/d83d344f3fe6919eb2046e7673d56642_s.jpg">
+						<img src="https://pic2.zhimg.com/29ad10655_s.jpg">
+					</div>
+					<div>
+						<img src="https://pic1.zhimg.com/e278d4e24_s.jpg">
+						<img src="https://pic1.zhimg.com/da8e974dc_s.jpg">
+						<img src="https://pic4.zhimg.com/49262af975a89bb9eba213cd88ee8f47_s.jpg">
+						<img src="https://pic1.zhimg.com/fddef6444_s.jpg">
+						<img src="https://pic1.zhimg.com/92b174964_s.jpg">
+						<img src="https://pic3.zhimg.com/c651ca4584ba0331a4628bbda9e012d2_s.jpg">
+						<img src="https://pic3.zhimg.com/cb63a4deeb0ab4e62e63b9255c9547fe_s.jpg">
+						<img src="https://pic2.zhimg.com/ea5f6fde45994a82722b57cf993ddc79_s.jpg">
+						<img src="https://pic4.zhimg.com/8928be3acc25c807ea5074992285f403_s.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="second-section">
+				<h3 class="related-questions">相关问题</h3>
+				<div class="related-questions-detail">
+					<div class="question-one">
+						<span>
+							<a href="#" class="blue-underline">为什么点赞手速过快会出现计赞 2 次？</a>
+						</span> 
+						<span class="answer-number">58 个回答</span>
+					</div>
+					<div>
+						<span>
+							<a href="#" class="blue-underline">为什么要给问题添加话题？</a>
+						</span>
+						<span class="answer-number">2 个回答</span>
+					</div>
+					<div>
+						<span>
+							<a href="#" class="blue-underline">如何给问题合理地添加话题？</a>
+						</span> 
+						<span class="answer-number">1 个回答</span>
+					</div>
+					<div>
+						<span>
+							<a href="#" class="blue-underline">如何为话题添加描述？</a>
+						</span> 
+						<span class="answer-number">1 个回答</span>
+					</div>
+					<div class="question-four">
+						<span>
+							<a href="#" class="blue-underline">知乎有没有考虑过改进新手引导体系？</a>
+						</span>
+						<span class="answer-number">14 个回答</span>
+					</div>
+				</div>
+			</div>
+			<div class="third-section">
+				<h3>问题状态</h3>
+				<p>最近活动于 12:31 • <a href="#" class="blue-underline">查看问题日志</a></p>
+				<p>被浏览 5270310 次，相关话题关注者 21811 人</p>
+			</div>
+		</div>
+	</div>
+	<!-- 页面尾部 -->
+	<div id="footer">
+		<span>&copy; 2016知乎</span>
+		<span class="footer-div">
+			<a href="/" target="_blank" class="white-underline">刘看山</a>
+			<span class="dot">·</span>
+			<a href="/" target="_blank" class="white-underline">知乎指南</a>
+			<span class="dot">·</span>
+			<a href="/" target="_blank" class="white-underline">建议反馈</a>
+			<span class="dot">·</span>
+			<a href="/" target="_blank" class="white-underline">移动应用</a>
+			<span class="dot">·</span>
+			<a href="/" target="_blank" class="white-underline">加入知乎</a>
+			<span class="dot">·</span>
+			<a href="/" target="_blank" class="white-underline">知乎协议</a>
+			<span>·</span>
+			<a href="/" target="_blank" class="white-underline">商务合作</a>
+		</span>
+	</div>
+</body>
+</html>

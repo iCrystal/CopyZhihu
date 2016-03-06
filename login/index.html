@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>知乎-与世界分享你的知识和经验</title>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="javascript/app.js"></script>
+</head>
+
+<body class="zhihu">
+	<div id="main">
+		<!-- 头部 -->
+		<div id="header">
+			<div class="zhihu-logo" id="text">知乎</div>
+			<h2 class="declaration">与世界分享你的知识、经验和见解</h2>
+		</div>
+		<!-- 注册登录部分 -->
+		<div id="sign-form">
+			<div class="tab-navs">
+				<div class="navs">
+					<a href="#" id="signin">登录</a>
+					<a href="#" id="signup">注册</a>
+					<span id="sliderbar"></span>
+				</div>
+			</div>
+
+
+			<form id="login">
+				<div class="inputs">
+					<div class="account">
+						<input type="text" name="account" placeholder="手机号或者邮箱">
+					</div>
+					<div class="password">
+						<input type="password" name="password" placeholder="密码">
+					</div>
+				</div>
+				<div class="submit">
+					<button type="submit">登录</button>
+				</div>
+
+				<div class="else clearfix">
+					<label><input type="checkbox" name="remember-me" checked value="true">记住我</label>
+					<a href="#" class="unable-login">无法登录？</a>
+					</div>
+					<div id="weibologin">
+						<a href="#">社交账号登录</a>
+						<div class="sprite">
+							<a href="#" alt="微信登录"><i class="sprite-index-icon-wechat"></i></a>
+							<a href="#" alt="微博登陆"><i class="sprite-index-icon-weibo"></i></a>
+							<a href="#" alt="qq登陆"><i class="sprite-index-icon-qq"></i></a>
+						</div>
+					</div>
+				</div>
+			</form> 
+
+			<form id="register">
+				<div class="inputs">
+					<div class="name">
+						<input type="text" placeholder="姓名">
+					</div>
+					<div class="telephone">
+						<input typt="text" placeholder="手机号(仅支持中国大陆)">
+					</div>
+					<div class="password password-register">
+						<input typt="text" placeholder="密码(不少于六位)">
+					</div>
+					<div class="captcha">
+						<input typt="text" placeholder="验证码">
+						<img src="https://www.zhihu.com/captcha.gif?r=1457223716022" id="captchaimage" width="100px" height="30px" alt="验证码">
+						<span id="information">看不清楚？换一张</span>
+					</div>
+				</div>
+				<div class="register">
+					<button type="submit">注册知乎</button>
+				<div id="weibologin">
+					<a href="#">社交账号登录</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<!-- 尾部 -->
+	<div id="footer">
+		<span>&copy; 2016知乎</span>
+		<span class="dot">·</span>
+		<a href="/" target="_blank">知乎圆桌</a>
+		<span class="dot">·</span>
+		<a href="/" target="_blank">发现</a>
+		<span class="dot">·</span>
+		<a href="/" target="_blank">移动应用</a>
+		<span class="dot">·</span>
+		<a href="/" target="_blank">来知乎工作</a>
+		<a href="/" target="_blank">京 ICP 备 13052560号</a>
+		<span>·</span>
+		<span>京公网安备 11010802010035号</span>
+	</div>
+</body>
+</html>

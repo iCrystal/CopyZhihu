@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/app.js"></script>
+    <title>知乎首页</title>
+</head>	
+
+	<body class="zu">
+		<!--  导航栏 -->
+		<div role="navigation" class="zu-top"> 
+			<div class="zg-wrap" id="zh-top-inner">
+				<a href="#" class="zu-top-link-logo" id="zh-top-link-logo"></a><!-- 用户名下拉框 -->
+				<div class="top-nav-profile">  
+					<a href="#" class="zu-top-nav-userinfo ">
+						<span class="name">於光晶</span>
+						<img class="avatar" src="https://pic3.zhimg.com/0822730372b1333b0635129409bca742_l.jpg">
+					</a>
+					<ul class="top-nav-dropdown" id="top-nav-profile-dropdown">
+						<li>
+							<a href="#">
+								<i class="zg-icon zg-icon-dd-home"></i>我的主页
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="zg-icon zg-icon-dd-pm"></i>私信
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="zg-icon zg-icon-dd-settings"></i>设置
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="zg-icon zg-icon-dd-logout"></i>退出
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 搜索框 -->
+				<div id="zh-top-search" class="zu-top-search"> 
+					<form method="GET" action="/search" id="zh-top-search-form" class="zu-top-search-form form-with-magnify">
+						<input type="text" class="zu-top-search-input" id="q" name="q" autocomplete="off" value="" placeholder="搜索话题、问题或人..." aria-haspopup="true">
+						<button class="magnify-button">
+							<i class="icon icon-magnify-q"></i>
+						</button>
+					</form>
+					<button class="zu-top-add-question" id="zu-top-add-question">提问</button>
+				</div>
+				<!-- 首页导航tab -->
+				<div id="zg-top-nav" class="zu-top-nav"> 
+					<ul class="zu-top-nav-ul zg-clear">
+						<li class="zu-top-nav-li current" id="zh-top-home-link">
+							<a class="zu-top-nav-link" href="/" id="zh-top-link-home">首页</a>
+						</li>
+						<li class="top-nav-topic-selector zu-top-nav-li " id="zh-top-nav-item-topic">
+							<a class="zu-top-nav-link" href="/" id="top-nav-dd-topic">话题</a>
+						</li>
+						<li class="top-nav-topic-find zu-top-nav-li">
+							<a class="zu-top-nav-link" href="/">发现</a>
+						</li>
+						<li class="top-nav-noti">
+							<a class="zu-top-nav-link" id="zh-top-nav-count-wrap"></span>消息</a>
+						</li>
+					</ul>
+					<div class="zu-top-nav-live zu-noti7-popup">
+						<div class="zu-top-nav-live-inner zg-r5px"> <!--  消息框 -->
+							<div class="zu-top-live-icon"> <!-- 小三角形 -->
+							</div>
+							<div class="zu-home-noti-inner"> <!-- 消息三栏tab -->
+								<div class="zm-noti7-popup-tab-container clearfix">
+									<button class="zm-noti7-popup-tab-item message">  
+										<span class="icon">消息</span>
+										<span class="new-noti" style="display:none">0</span>
+									</button> 
+									<button class="zm-noti7-popup-tab-item user current">
+										<span class="icon">用户</span>
+										<span class="new-noti" style="display:none">0</span>
+									</button>
+									<button class="zm-noti7-popup-tab-item thanks">
+										<span class="icon">感谢和赞同</span>
+										<span class="new-noti" style="display:none">0</span>
+									</button>
+								</div>
+							</div>
+							<div class="zm-noti7-frame-border top">   <!-- 区分线 -->
+							</div>
+							<div class="zm-noti7-frame">
+								<div class="zm-noti7-content zh-scroller">  <!-- 消息栏内容 -->
+									<div class="zh-scroller-inner">
+										<div class="zm-noti7-content-inner">
+											<div class="zm-noti7-popup-refresh">
+												<img class="noti-spinner" style="display:none">
+											</div>
+											<div class="zm-noti7-content-body">
+												<div class="zm-noti7-content-item">
+													<span class="author-list">
+														<span class="user-block">
+															<a href="" class="zg-link">於光晶</a>
+														</span>
+													</span>
+													<span class="author-list">
+														<span class="user-block">
+															<a href="" class="zg-link">於光晶</a>
+														</span>
+													</span>
+													<span class="author-list">
+														<span class="user-block">
+															<a href="" class="zg-link">於光晶</a>
+														</span>
+													</span>
+													<span class="author-list">
+														<span class="user-block">
+															<a href="" class="zg-link">於光晶</a>
+														</span>
+													</span>
+													<span class="author-list">
+														<span class="user-block">
+															<a href="" class="zg-link">於光晶</a>
+														</span>
+													</span>
+													"等7人回答了问题"
+													<a href="">有一个二货男朋友是怎样一种体验</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="zm-noti7-content zh-scroller">  <!-- 用户栏内容 -->
+									<div class="zh-scroller-inner">
+										<div class="zh-scroller-content">
+											<div class="zm-noti7-content-inner">
+												<div class="zm-noti7-popup-refresh" sytle="display:none">
+													<img class="noti-spinner">
+												</div>
+												<div class="zm-noti7-content-body">
+													<div class="zm-noti7-content-head-item">
+														<span class="zg-gray-normal">这些人最近关注了你</span>
+													</div>
+													<div class="zm-noti7-content-item">
+														<div class="zm-profile-section-item zg-clear nohovercard">
+															<a href="" class="zm-item-link-avatar">
+																<img src="http://pic4.zhimg.com/79825af73_m.jpg" class="zm-item-img-avatar">
+															</a>
+															<div class="zm-list-content-medium">
+																<a href="" class="zg-link">於光晶</a>
+																<div class="zg-gray-normal">
+																	<span>我是个二货我是个二货</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="zm-noti7-content zh-scroller">  <!-- 感谢和赞同栏内容 -->
+									<div class="zh-scroller-inner">
+										<div class="zh-scroller-content">
+											<div class="zm-noti7-content-inner">
+												<div class="zm-noti7-popup-refresh" sytle="display:none">
+													<img class="noti-spinner">
+												</div>
+												<div class="zm-noti7-content-body">
+													<div class="zm-noti7-content-item">
+														获得6次赞同/1次感谢：
+														<a href="" class="question_link">有一个二货女朋友是怎样的体验？</a>
+														来自
+														<span class="author-list">
+															<span class="user-block">
+																<a href="" class="zg-link">水果味的木易</a>
+															</span>
+															<span class="user-block">
+																<a href="" class="zg-link">水果味的木易</a>
+															</span>
+															<span class="user-block">
+																<a href="" class="zg-link">水果味的木易</a>
+															</span>
+															<span class="user-block">
+																<a href="" class="zg-link">水果味的木易</a>
+															</span>
+															<span class="user-block">
+																<a href="" class="zg-link">水果味的木易</a>
+															</span>
+															<span class="user-block">
+																<a href="" class="zg-link">水果味的木易</a>
+															</span>
+															"等6人"
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="zm-noti7-frame-border bottom">  <!-- 下区分线 -->
+							</div>
+							<div class="zm-noti7-popup-footer">
+								<a href="" class="zm-noti7-popup-footer-all zg-right">查看全部》</a>
+								<a href="" class="zm-noti7-popup-footer-set" title="通知设置">
+									<i class="zg-icon zg-icon-settings"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="zg-wrap zu-main">
+			<div class="right">
+				<div class="zu-main-sidebar">
+					<div class="zm-side-section">
+						<div class="zm-side-section-inner">
+							<div class="zm-side-nav-group">    <!-- 第一个右侧边栏 -->
+								<ul class="zm-side-nav">
+									<li class="zm-side-nav-li">
+										<a href="/" class="zm-side-nav-link">
+											<i class="zg-icon zg-icon-sidenav-draft"></i> 我的草稿
+										</a>
+									</li>
+									<li class="zm-side-nav-li">
+										<a href="/" class="zm-side-nav-link">
+											<i class="zg-icon zg-icon-sidenav-fav"></i> 我的收藏
+										</a>
+									</li>
+									<li class="zm-side-nav-li">
+										<a href="/" class="zm-side-nav-link">
+											<i class="zg-icon zg-icon-sidenav-follow"></i> 我关注的问题
+										</a>
+									</li>
+									<li class="zm-side-nav-li">
+										<a href="/" class="zm-side-nav-link">
+											<i class="zg-icon zg-icon-sidenav-invite"></i> 邀请我回答的问题
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="zm-side-nav-group">      <!-- 第二个右侧边栏 -->
+								<ul class="zm-side-nav">
+									<li class="zm-side-nav-li">
+										<a class="zm-side-nav-link" href="/log/questions">
+										<i class="zg-icon zg-icon-sidenav-all"></i>
+										所有问题
+										</a>
+									</li>
+									<li class="zm-side-nav-li">
+										<a class="zm-side-nav-link" href="/topics">
+										<i class="zg-icon zg-icon-sidenav-plaza"></i>
+										话题广场
+										</a>
+									</li>
+									<li class="zm-side-nav-li rq3-publiceditlink" id="js-debuts-entry">
+										<a class="zm-side-nav-link" href="/debuts/">
+										<i class="zg-icon zg-icon-sidenav-debuts"></i>
+										首场秀
+										</a>
+									</li>
+									<li class="zm-side-nav-li rq3-publiceditlink" id="rq3-sidenav-link">
+										<a class="zm-side-nav-link" href="/watch">
+										<i class="zg-icon zg-icon-sidenav-publicedit"></i>
+										公共编辑动态
+										<span class="zg-num hidden">0</span>
+										</a>
+									</li>
+									<li class="zm-side-nav-li">
+										<a class="zm-side-nav-link z-ico-container" href="/community">
+										<i class="z-ico-community"></i>
+										社区服务中心
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="zm-side-section zm-side-list-content zm-side-pinned-topics">          <!-- 知乎圆桌 -->
+						<h3><a href="/roundtable" class="zg-link-litblue zg-right">查看全部 »</a>知乎圆桌</h3>
+						<ul class="zm-side-nav">
+							<li class="zm-side-nav-li zm-side-nav-roundtable">
+								<a data-follow="rt:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-outdoorsports"><i class="z-icon-follow"></i>关注圆桌</a>
+								<a class="photo zm-side-nav-link" href="/roundtable/outdoorsports">
+									<img data-tip="r$b$outdoorsports" src="images/yuanzhuo1.png" class="side-topic-avatar" alt="二胎养育方法论">
+									<span data-tip="r$t$outdoorsports">二胎养育方法论</span>
+									<span class="zg-right side-roundtable-hint">还有 13 小时结束</span>
+								</a>
+							</li>
+							<li class="zm-side-nav-li zm-side-nav-roundtable">
+								<a class="photo zm-side-nav-link" href="/roundtable/superhero">
+									<img data-tip="r$b$superhero" src="images/yuanzhuo2.png" class="side-topic-avatar" alt="好好过年">
+									<span data-tip="r$t$superhero">好好过年</span>
+								</a>
+							</li>
+							<li class="zm-side-nav-li zm-side-nav-roundtable">
+								<a class="photo zm-side-nav-link" href="/roundtable/hedgefund">
+									<img data-tip="r$b$hedgefund" src="images/yuanzhuo3.png" class="side-topic-avatar" alt="看足球 国际赛场">
+									<span data-tip="r$t$hedgefund">看足球 国际赛场</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="zm-side-section zm-side-list-content zm-side-pinned-topics">            <!-- 常去话题 -->
+						<h3><a href="/topic" class="zg-link-litblue zg-right">查看全部 »</a>常去话题</h3>
+						<ul class="zm-side-nav">
+							<li class="zm-side-nav-li">
+								<a class="photo zm-side-nav-link" href="/topic/19550429">
+									<img src="http://pic2.zhimg.com/b0f1423db_s.jpg" alt="电影" class="js-topic-avatar side-topic-avatar">电影
+								</a>
+								<a id="ga_sidebar_topic_all" href="javascript:;" class="unpin" data-tid="68" data-action="unpin-topic"><i class="z-icon-x"></i></a>
+							</li>
+							<li class="zm-side-nav-li">
+								<a class="photo zm-side-nav-link" href="/topic/19550453">
+									<img src="http://pic2.zhimg.com/63e51bed5_s.jpg" alt="音乐" class="js-topic-avatar side-topic-avatar">音乐
+								</a>
+								<a id="ga_sidebar_topic_all" href="javascript:;" class="unpin" data-tid="75" data-action="unpin-topic"><i class="z-icon-x"></i></a>
+							</li>
+							<li class="zm-side-nav-li">
+								<a class="photo zm-side-nav-link" href="/topic/19550517">
+									<img src="http://pic4.zhimg.com/a06fc4c27_s.jpg" alt="互联网" class="js-topic-avatar side-topic-avatar">互联网
+								</a>
+								<a id="ga_sidebar_topic_all" href="javascript:;" class="unpin" data-tid="99" data-action="unpin-topic"><i class="z-icon-x"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div id="zh-footer" class="zh-footer">    <!-- 关于我们版权所属 -->
+						<div class="zg-wrap clearfix">
+							<ul>
+								<li><a href="/question/19581624" target="_blank">知乎指南</a></li>
+								<li><a href="javascript:;" id="js-feedback-button">建议反馈</a></li>
+								<li><a href="/app" target="_blank">移动应用</a></li>
+								<li><a href="/careers">加入知乎</a></li>
+								<li><a href="/terms" target="_blank">知乎协议</a></li>
+								<li><a href="mailto:bd@zhihu.com">商务合作</a></li>
+							</ul>
+							<span class="copy">© 2016 知乎</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 知乎左边的内容 -->
+			<div class="left">
+				
+				<!--  设置栏 -->
+				<div class="zg-section" id="zh-home-list-title">        
+					<i class="zg-icon zg-icon-feedlist"></i>&nbsp;最新动态
+					<span class="zg-right zm-noti-cleaner-setting" style="list-style:none">
+						<a href="/" class="zg-link-gray-normal">
+							<i class="zg-icon zg-icon-settings"></i>&nbsp;设置
+						</a>
+					</span>
+				</div>
+
+				<!-- 问题区 -->
+				<div class="zu-main-feed-con navigable" id="zh-question-list">
+					<div class="feed-item folding feed-item-hook">
+						<div class="feed-item-inner">
+						<!-- 左面话题图片 -->
+							<div class="avatar">
+								<a href="/" class="zm-item-link-avatar">
+									<img src="https://pic1.zhimg.com/fc91b1cec_xs.jpg">
+								</a>
+							</div>
+						<!-- 问题及其来源 -->
+							<div class="feed-main">
+								<div class="source">
+									来自
+									<a href="#">前端开发</a>
+									<a href="#">网页设计((Web Design))</a>
+								</div>
+								<div class="content">
+									<h2>
+										<a class="question_link" target="_blank" href="/">medium.com 是如何让图片加载时从模糊到清晰的？</a>
+									</h2> 
+							<!-- 左侧点赞栏 -->
+									<div class="entry-body">      
+										<div class="zm-item-vote">
+											<a class="zm-item-vote-count" href="/">385</a>
+										</div>
+										<div class="zm-votebar goog-scrollfloater">
+											<button class="up" title="赞同">
+												<i class="icon vote-arrow"></i>
+												<span class="label">赞同</span>
+												<span class="count">385</span>
+											</button>
+											<button class="down" aria-pressed="false" title="反对，不会显示你的姓名">
+												<i class="icon vote-arrow"></i>
+												<span class="label">反对，不会显示你的姓名</span>
+											</button>
+										</div>
+									<!-- 答案详情 -->
+										<div class="zm-item-answer-detail">      
+											<div class="zm-item-answer-author-info">      <!-- 作者信息 -->
+												<h3 class="zm-item-answer-author-wrap">
+													<a data-tip="p$t$xuan-jin-yi" href="/people/xuan-jin-yi">张靖超</a>，<span title="这个人很懒，什么也没留下" class="zu-question-my-bio">这个人很懒，什么也没留下</span>
+												</h3>
+												<a href="/" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+											</div>
+											<div class="zm-item-vote-info ">     <!-- 点赞的人 -->
+												<span class="voters">
+												<span class="user-block"><a href="/" class="zg-link">Julie</a>、</span><span class="user-block"><a href="/" class="zg-link">曹洋</a>、</span><span class="user-block"><a href="/" class="zg-link" title="shicheng">shicheng</a></span>
+												</span>
+												<a href="/" class="more"> 等人赞同</a>
+											</div><!-- 完全版的内容 -->
+											<div class="zm-item-rich-text">      
+												<div class="zm-editable-content" id="completeone">
+                                                	单单就 medium 来说，他们载入图片具体的流程如下：1. 在文档流中嵌入一个和原图一样大的 canvas，和一个不显示的 img ，后者负责载入一个非常小的图片（如40px大小2. 一段 js 监听到上述 img 标签的 onload 事件时，将小的图片以高斯模糊的方式绘制到 canvas 上3. 当页面滚动到快要显示这张图片时，js 控制开始加载原图4. 原图加载完成后，被放在之前的 img 标签中（此时看不到原图，被 canvas 挡住5. 在 canvas 中应用 fadeOut 效果，逐渐露出原图6. fadeOut 播放完成后，将 canvas display：none表示 medium 的细节做的真是非常到位，之前我记得有篇文章专门说这个来着，一时找不到链接了<span class="answer-date-link-wrap">
+													<a class="answer-date-link last_updated meta-item" target="_blank" href="/question/26812561/answer/34218169">编辑于 2016-02-26</a>
+													</span>
+												</div>
+												
+												<div class="zh-summary summary clearfix" id="hiddenone">    <!-- 缩略版显示 -->
+                                                单单就 medium 来说，他们载入图片具体的流程如下：1. 在文档流中嵌入一个和原图一样大的 canvas，和一个不显示的 img ，后者负责载入一个非常小的图片（如40px大小2. 一段 js 监听到上述 img 标签的 onload 事件时，将小的图片以高斯模糊的方式绘制到 canv…
+												
+												<a href="##" class="toggle-expand" id="comeoutone">显示全部</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<!--  浮动栏 -->
+								<div class="feed-meta">      
+									<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+										<div class="zm-meta-panel">
+											<a class="follow-link zg-follow meta-item" href="/"><i class="z-icon-follow"></i>关注问题</a>
+											<a href="#" class=" meta-item toggle-comment">
+											<i class="z-icon-comment"></i>13 条评论</a>
+											<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+											<a href="#" class="meta-item zu-autohide" name="share">
+											<i class="z-icon-share"></i>分享</a>
+											<a href="#" class="meta-item zu-autohide" name="favo">
+											<i class="z-icon-collect"></i>收藏</a>
+											<span class="zg-bull zu-autohide">•</span>
+											<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+											<span class="zg-bull zu-autohide">•</span>
+											<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+											<span class="copyright zu-autohide"></span>
+											<a href="#" name="collapse" class="meta-item zg-right" id="collapse"><i class="z-icon-fold"></i>收起</a>
+										</div>
+									</div>
+									<a href="#" class="ignore zu-autohide" name="dislike" data-tip="s$b$不感兴趣"></a>
+								</div>
+							</div>
+						</div>
+						<div class="dislike-wrap">
+						此内容将不会在动态中再次显示 
+							<span class="zg-bull">•</span> 
+							<a href="#" class="meta-item revert">撤销</a>
+							<a href="#" class="ignore zu-autohide close"></a>
+						</div>
+					</div>
+				</div>
+	</body>
+</html>
