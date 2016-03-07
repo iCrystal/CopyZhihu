@@ -1267,6 +1267,9 @@ a.zm-side-nav-link{
 #completeone,#completetwo,#completethree{
   display: none;
 }
+#packupone,#packuptwo,#packupthree{
+  display: none;
+}
 
 
 
